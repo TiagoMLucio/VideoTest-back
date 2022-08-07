@@ -38,7 +38,7 @@ Make sure you have node and docker installed by typing `node -v` and `docker -v`
 
 Don't forget to check if the template features fits your use case!
 
-Check for the .github/workflows files, because they will need to be updated once you start your deploy 
+Check for the .github/workflows files, because they will need to be updated once you start your deploy
 
 ## Features
 
