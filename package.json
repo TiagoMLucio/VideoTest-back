@@ -8,7 +8,8 @@
   "scripts": {
     "lint": "eslint src --ext ts,tsx",
     "dev:server": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/infra/http/server.ts",
-    "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files"  },
+    "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files"
+  },
   "devDependencies": {
     "@babel/cli": "^7.12.17",
     "@babel/core": "^7.12.17",
@@ -36,16 +37,21 @@
     "typescript": "^4.1.5"
   },
   "dependencies": {
+    "@types/aws-sdk": "^2.7.0",
+    "@types/morgan": "^1.9.3",
     "@types/multer": "^1.4.7",
-    "aws-sdk": "^2.846.0",
+    "@types/multer-s3": "^2.7.12",
+    "aws-sdk": "^2.1189.0",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
+    "dotenv": "^16.0.1",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
     "handlebars": "^4.7.7",
     "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
+    "multer-s3": "^2.10.0",
     "nodemailer": "^6.4.18",
     "openapi-types": "^10.0.0",
     "path": "^0.12.7",
